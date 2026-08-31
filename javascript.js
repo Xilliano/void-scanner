@@ -1,3 +1,6 @@
-const div = document.querySelector("div");
+const inputImg = document.getElementById('image');
 
-div.style.color = "white";
+inputImg.onchange = function () {
+    let src = URL.createObjectURL(this.file);
+    document.querySelector('img').src = src;
+}

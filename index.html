@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Void Scanner</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="javascript.js" defer></script>
 </head>
 <body>
-    <div>dummy text</div>
+    <div class="header">VOID DETECTION</div>
+    <div class="sidebar left">
+        <form action="./#">
+            <div class="submit image">
+                <label for="image">Add Image</label>
+                <input type="file" id="image" name="image" title=""
+                accept=".png, .jpeg, .jpg">
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="viewport">
+        <img>
+    </div>
+    <div class="sidebar right"></div>
+    <div class="footer"></div>
 </body>
 </html>
