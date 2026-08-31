@@ -77,6 +77,10 @@ button {
     padding: 5px 15px;
 }
 
+button:active {
+    background-color: rgb(91, 137, 211) !important;
+}
+
 button:hover {
     background-color: var(--blue);
     color: antiquewhite
@@ -94,6 +98,25 @@ button:hover {
 img {
     width: 100%;
     height: auto;
+    cursor: zoom-in;
+    transition: transform 0.2s;
+}
+
+img.zoomed {
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+.sidebar.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    writing-mode: vertical-lr;
+    direction:ltr;
+    display: none;
 }
 
 .footer{
