@@ -92,8 +92,8 @@ button:hover {
 }
 
 img {
-    height: 75%;
-    width: auto;
+    width: 100%;
+    height: auto;
 }
 
 .footer{

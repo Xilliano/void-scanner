@@ -10,11 +10,13 @@
 <body>
     <div class="header">VOID DETECTION</div>
     <div class="sidebar left">
-        <form>
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="http://127.0.0.1:8000/upload-image" method="POST" target="dummyframe"
+        enctype="multipart/form-data">
             <div class="submit image">
                 <label for="image">Add Image</label>
                 <input type="file" id="image" name="image" title=""
-                accept=".png, .jpeg, .jpg">
+                accept=".png, .jpeg, .jpg" required >
             </div>
 
             <div class="buttons">
