@@ -8,7 +8,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-columns: 2fr 7fr 2fr;
     grid-template-rows: .5fr 8fr .5fr;
     background-color: var(--background);
 }
@@ -21,6 +21,7 @@ body > * {
     display: flex;
     align-items: center;
     padding-left: 2vmin;
+    grid-column: 1 / 4;
 }
 
 form {
@@ -70,8 +71,16 @@ button:hover {
     color: antiquewhite
 }
 
-.header {
-    grid-column: 1 / 4;
+.viewport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img {
+    height: 75%;
+    width: auto;
 }
 
 .footer{

@@ -1,6 +1,14 @@
-const inputImg = document.getElementById('image');
+const inputImg = document.querySelector('#image');
+const image = document.querySelector("img");
+const reset = document.querySelector("button[type=reset]");
 
-inputImg.onchange = function () {
-    let src = URL.createObjectURL(this.file);
-    document.querySelector('img').src = src;
-}
+inputImg.addEventListener("change", () => {
+    const [file] = inputImg.files;
+    if (file) {
+        image.src = URL.createObjectURL(file);
+    }
+})
+
+reset.addEventListener("click", () => {
+    image.src = '';
+})
